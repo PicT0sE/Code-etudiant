@@ -75,7 +75,29 @@
             { numero: '22300319', nom: 'vasseur', prenom: 'raphael' },
             { numero: '22300553', nom: 'villa', prenom: 'francois-marie' },
             { numero: '22300339', nom: 'wetterwald', prenom: 'lucas' },
-            { numero: '22300431', nom: 'wood', prenom: 'tom' }
+            { numero: '22300431', nom: 'wood', prenom: 'tom' },
+            { numero: '22501114', nom: 'vasse', prenom: 'enzo' },
+            { numero: '22500190', nom: 'aubel', prenom: 'lea' },
+            { numero: '22504806', nom: 'bec', prenom: 'jasmine' },
+            { numero: '22506095', nom: 'boufhal', prenom: 'layana' },
+            { numero: '22502561', nom: 'chonfont', prenom: 'ethan' },
+            { numero: '22200518', nom: 'coeur', prenom: 'gregory' },
+            { numero: '22500451', nom: 'crosse', prenom: 'melody' },
+            { numero: '22502758', nom: 'da cruz', prenom: 'emma' },
+            { numero: '22502833', nom: 'delpech-pradelles', prenom: 'lisa' },
+            { numero: '22201260', nom: 'dorey', prenom: 'candice' },
+            { numero: '22500540', nom: 'dorr', prenom: 'owen' },
+            { numero: '22500151', nom: 'eone eone', prenom: 'muriel' },
+            { numero: '22502573', nom: 'fidile', prenom: 'coline' },
+            { numero: '22501815', nom: 'gaubert', prenom: 'sunny' },
+            { numero: '22500449', nom: 'guilbert', prenom: 'elisa' },
+            { numero: '22008159', nom: 'lhuillier', prenom: 'nans' },
+            { numero: '22200352', nom: 'lemaitre', prenom: 'gabin' },
+            { numero: '22503174', nom: 'ripault', prenom: 'helene' },
+            { numero: '22500789', nom: 'winter', prenom: 'apolline' },
+            { numero: '22502510', nom: 'yedili', prenom: 'julide' }
+
+
         ];
 
         document.getElementById('searchBtn').addEventListener('click', function() {
@@ -98,7 +120,7 @@
                     result = found.map(e => `
                         <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap">
                             <b>${e.numero}</b> - ${e.nom.toUpperCase()} ${e.prenom.charAt(0).toUpperCase() + e.prenom.slice(1)}
-                            <a href="https://note.tozza.net/?num=${encodeURIComponent(e.numero)}" target="_blank" style="background:#3b82f6;color:#fff;padding:7px 14px;border-radius:5px;text-decoration:none;font-size:0.98rem;transition:background 0.2s;">Voir notes</a>
+                            <a href="http://notes.mmitoulon.fr/?num=${encodeURIComponent(e.numero)}" target="_blank" style="background:#3b82f6;color:#fff;padding:7px 14px;border-radius:5px;text-decoration:none;font-size:0.98rem;transition:background 0.2s;">Voir notes</a>
                         </div>
                     `).join('');
                 }
